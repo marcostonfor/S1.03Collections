@@ -1,5 +1,9 @@
 package s3ejercicio1.nivell;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Start {
     public static void main(String[] args) {
         Month month = new Month("");
@@ -14,11 +18,26 @@ public class Start {
         month.addMonth(new Month("Octubre"));
         month.addMonth(new Month("Noviembre"));
         month.addMonth(new Month("Diciembre"));
+        month.addMonth(new Month("Enero"));
 
+        for(Month mon : Month.months) {
+            System.out.println(mon.getName());
+        }
+        System.out.println("\n");
         Month.months.add(7, new Month("Agosto"));
 
         for(Month m : Month.months) {
             System.out.println(m.getName());
+        }
+
+        Set<Month> months = new HashSet<>(Month.months);
+
+
+
+        System.out.println("\nDentro del HashSet:");
+
+        for(Month element : months) {
+            System.out.println(element.getName());
         }
     }
 }
