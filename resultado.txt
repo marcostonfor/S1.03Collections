@@ -1,0 +1,8 @@
+Nombre: marcos.
+ Respuesta: australia es la capital de Camberra
+Nombre: marcos.
+ Respuesta: España es la capital de Madrid
+Nombre: andres.
+ Respuesta: Colombia es la capital de Bogota
+Nombre: marcos.
+ Respuesta: Francia es la capital de Paris

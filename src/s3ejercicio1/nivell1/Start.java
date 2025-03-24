@@ -1,6 +1,5 @@
-package s3ejercicio1.nivell;
+package s3ejercicio1.nivell1;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,13 +20,13 @@ public class Start {
         month.addMonth(new Month("Enero"));
 
         for(Month mon : Month.months) {
-            System.out.println(mon.getName());
+            System.out.println(mon.getName()); // Valor repetido sin Agosto.
         }
         System.out.println("\n");
         Month.months.add(7, new Month("Agosto"));
 
         for(Month m : Month.months) {
-            System.out.println(m.getName());
+            System.out.println(m.getName()); // Valor repetido con Agosto.
         }
 
         Set<Month> months = new HashSet<>(Month.months);
@@ -37,7 +36,7 @@ public class Start {
         System.out.println("\nDentro del HashSet:");
 
         for(Month element : months) {
-            System.out.println(element.getName());
+            System.out.println(element.getName()); // Valores unicos del HashSet().
         }
     }
 }

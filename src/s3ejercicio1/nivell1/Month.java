@@ -1,6 +1,9 @@
-package s3ejercicio1.nivell;
+package s3ejercicio1.nivell1;
+
+import s3ejercicio1.nivell2.Restaurant;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Month {
     private String name;
@@ -28,10 +31,18 @@ public class Month {
 
     public static void addMonth(Month month) {
         months.add(month);
-
     }
 
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Month that = (Month) obj;
+        return Objects.equals(name, that.name);
+    }
 
+    public int hashCode() {
+        return Objects.hash(name);
+    }
 
 
 }

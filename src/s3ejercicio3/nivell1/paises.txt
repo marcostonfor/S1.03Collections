@@ -1,0 +1,10 @@
+España->Madrid
+Fracia->Paris
+Alemania->Berlin
+Italia->Roma
+Grecia->Atenas
+Australia->Camberra
+Inglaterra->Londres
+Canada->Otawa
+Colombia->Bogota
+Peru->Lima
